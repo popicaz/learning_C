@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+   int num;   
+   int u, t, h;
+   printf("enter the number: ");  
+   scanf("%d", &num);
+   
+   u = num % 10; 
+   t = (num / 10) % 10;  
+   h = num / 100; 
+   printf("existing number %d\n",num);
+   printf("sum of digits: %d\n", u+t+h );
+   
+
+    return 0;
+}
