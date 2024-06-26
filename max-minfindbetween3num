@@ -1,0 +1,33 @@
+==finding the difference between the maximum and minimum values in three numbers.
+
+#include <stdio.h>
+
+int main() {
+  
+  int x, y, z;
+  int max, min;
+  
+  printf("enter your x: ");
+  scanf("%d", &x);
+  printf("enter your y: ");
+  scanf("%d", &y);
+  printf("enter your z: ");
+  scanf("%d", &z);
+  
+ max = x;
+ min = y;
+ if (x<y) {
+max = y;
+min = x;
+}
+if (max < z) {
+max = z;
+}
+if(z < min) {
+min = z;
+}
+printf("max = %d\n", max);
+printf("min = %d\n", min);
+
+    return 0; 
+    }
