@@ -1,0 +1,45 @@
+ = a basic calculatiion =
+
+#include <stdio.h>
+
+int main() {
+  
+int num, num1;
+char math;
+printf("use these math signs(+,-,/,%): ");
+scanf("%c", &math);
+printf("write your number: ");
+scanf("%d", &num);
+printf("write your second number : \n");
+scanf("%d", &num1);
+
+switch(math) {
+  
+  case'+':
+  printf("result is %d", num + num1);
+  break;
+  case'-':
+  printf("result is %d", num - num1);
+  break;
+  case'/':
+  if (num1 == 0) { 
+      printf("you can not divide by 0\n");
+  }
+  else {
+  printf("result is %d\n", num / num1);
+  }
+  break;
+  case'%':
+  if (num1 == 0) { 
+      printf("you can not divide by 0\n");
+  }
+  else {
+  printf("result is %d\n", num % num1);
+  }
+  default:
+  printf("you need to choose only these signs(+, -, /, %).\n");
+  break;
+  
+}
+    return 0;  
+ }
