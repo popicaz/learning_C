@@ -1,0 +1,21 @@
+= a simple evaluate programming system for students =
+
+#include <stdio.h>
+
+int main() {
+  int grade1;
+   printf("Enter your grade1: ");
+    scanf("%d", &grade1);
+
+    if (grade1 >= 80) {
+        printf("Perfect job!!\n");
+    }
+    else if (grade1 >=60 && grade1 < 80) {
+        printf("Nice but try harder!\n");
+    }
+    else {
+        printf("WORKKK!!!\n");
+    }
+    
+    return 0;  
+ }
