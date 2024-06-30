@@ -1,0 +1,18 @@
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    // x = |x|
+    int x;
+    printf("enter x number: ");
+    scanf("%d", &x); 
+    
+  if( x < 0)
+    printf("|%x|",(-1)*x);
+    else 
+    printf("|%x|", x);
+    
+    return 0;
+}
