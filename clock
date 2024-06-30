@@ -1,0 +1,54 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    //hours = 60 minutes
+    //minutes = 3600 seconds
+    int hours, minutes, seconds;
+  printf("enter seconds: ");
+  scanf("%d", &seconds);
+  int x, y, z;
+  
+  x = (seconds / 3600);
+  y = (seconds - x * 3600) / 60;
+  z = (seconds - x * 3600) % 60;
+
+ if(x < 10);
+ printf("0");
+ printf("%d : ", x);
+ if(y < 10)
+ printf("0");
+  printf("%d : ", y);
+  if( z < 10)
+  printf("0");
+ printf("%d ", z);
+  
+    return 0;
+}#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    //hours = 60 minutes
+    //minutes = 3600 seconds
+    int hours, minutes, seconds;
+  printf("enter seconds: ");
+  scanf("%d", &seconds);
+  int x, y, z;
+  
+  x = (seconds / 3600);
+  y = (seconds - x * 3600) / 60;
+  z = (seconds - x * 3600) % 60;
+
+ if(x < 10);
+ printf("0");
+ printf("%d : ", x);
+ if(y < 10)
+ printf("0");
+  printf("%d : ", y);
+  if( z < 10)
+  printf("0");
+ printf("%d ", z);
+  
+    return 0;
+}
